@@ -10,4 +10,8 @@ class GUI:
     time = datetime.now()
     level = 0
 
-    def __init__(self):
+
+
+
+
+    #def __init__(self):

@@ -1,11 +1,15 @@
 import pygame
-import gui
+import sys
 
 #game setup
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
 running = True
+
+button = pygame.Surface((150, 150))
+button_rect = pygame.Rect(125, 125, 150, 50)
+
 
 while running:
     for event in pygame.event.get():

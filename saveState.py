@@ -1,7 +1,8 @@
 import json
 from pathlib import Path
 import os
-
+def saveGameState():
+    pass
 saveFile = Path("saveFile.json")
 
 saveStats = {

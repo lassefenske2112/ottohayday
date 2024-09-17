@@ -4,6 +4,8 @@ from pygame import MOUSEBUTTONDOWN
 from gui import *
 import sys
 
+from ottomatisch.saveState import saveStats
+
 #game setup
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
@@ -22,8 +24,8 @@ while running:
                 screen.fill("white")
 
     # fill the screen with a color to wipe away anything from last frame
-
-
+    gui = GUI()
+    GUI.draw_labels(safeState.get_coins, )
 
     screen.blit(testButton.buttonSurface, (testButton.button_rect.x, testButton.button_rect.y))
     # flip() the display to put your work on screen

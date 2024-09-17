@@ -12,13 +12,6 @@ class GUI:
         self.time = time
         self.level = level
 
-    coins = 0
-    employees = 0
-    rating = 0
-    buildings = []
-    time = datetime.now()
-    level = 0
-
     def draw_labels(self, coins, employees):
         # Texte rendern
         coins_text = pygame.font.render(f"Coins: {self.coins}", True, black)

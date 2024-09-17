@@ -3,8 +3,11 @@ from pathlib import Path
 import os
 def saveGameState():
     pass
-saveFile = Path("saveFile.json")
 
+assetsFolder = Path("assets")
+if not assetsFolder.exists():
+    os.mkdir(assetsFolder)
+saveFile = Path("assets/saveFile.json")
 saveStats = {
     "coins": 0,
     "employees": 0,
